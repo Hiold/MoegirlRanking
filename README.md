@@ -1,11 +1,9 @@
-#安装
+安装
 
 将此项目 clone 到mediawiki 的extension 目录中
 
 ```shell
-`进入mediawiki所在目录`
 cd mediawiki/extension
-`clone插件到本地`
 git clone https://github.com/Hiold/MoegirlRanking.git
 ```
 

@@ -17,3 +17,10 @@ wfLoadExtension('MoegirlRanking');
 cd mediawiki/maintenance
 php update.php
 ```
+
+
+![Image text](https://raw.githubusercontent.com/Hiold/images/master/default.png)
+
+![Image text](https://raw.githubusercontent.com/Hiold/images/master/byTime.png)
+
+![Image text](https://raw.githubusercontent.com/Hiold/images/master/byTimeField.png)

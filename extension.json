@@ -1,0 +1,27 @@
+{
+  "name": "MoegirlRanking",
+  "author": "Hi_old",
+  "version": "1.0.0",
+  "url": "#",
+  "descriptionmsg": "萌百娘热词插件---->Hi_old解决方案",
+  "license-name": "GPL-2.0+",
+  "type": "parserhook",
+  "AutoloadClasses": {
+    "MoegirlRankingHandlerHook": "./MoegirlRankingHandlerHook.php",
+    "MoegirlRanking": "./includes/parserfunctions/MoegirlRanking.php",
+    "MGRankingAPI": "./api/MGRankingAPI.php",
+    "RankAroundService":"./includes/dbservice/RankAroundService.php"
+  },
+  "ExtensionMessagesFiles": {
+    "ExampleExtensionMagic": "./includes/parserfunctions/i18n/MoegirlRanking.i18n.php"
+  },
+  "Hooks": {
+    "LoadExtensionSchemaUpdates": "MoegirlRankingHandlerHook::addDatabases",
+    "BeforePageDisplay": "MoegirlRankingHandlerHook::onBeforePageDisplay",
+    "ParserFirstCallInit": "MoegirlRanking::onParserFirstCallInit"
+  },
+  "APIModules": {
+    "MGRanking": "MGRankingAPI"
+  },
+  "manifest_version": 1
+}

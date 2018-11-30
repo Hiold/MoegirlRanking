@@ -1,0 +1,2 @@
+# MoegirlRanking
+first commit

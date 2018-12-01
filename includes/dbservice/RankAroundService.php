@@ -18,7 +18,7 @@ class RankAroundService
 
         $sql = @sprintf(SqlInfomation::$MOEGIRL_VISIT_RECORD_INSER, $f, $wiki_id, $wiki_version, $user_id);
         $result = $dbConnW->query($sql, __METHOD__);
-//        Loggerss::addlogtoFile("insertsql", $sql . "-----result" . $result);
+        self::addlogtoFile("insertsql", $sql . "-----result" . $result);
 
     }
 

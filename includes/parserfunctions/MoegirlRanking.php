@@ -146,8 +146,6 @@ final class MoegirlRanking
         $localDateString = DateUtils::getDateArray($date);
 
         $parser->getOutput()->updateCacheExpiry(30);
-        // The input parameters are wikitext with templates expanded.
-        // The output should be wikitext too.
         $service = new RankAroundService();
         $rock = $service->getRankByTimeLimited($localDateString[0], $localDateString[1], $position - 1, 1);
 

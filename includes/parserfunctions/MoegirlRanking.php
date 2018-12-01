@@ -116,7 +116,7 @@ final class MoegirlRanking
         if ($position < 1) {
             return null;
         }
-        self::addlogtoFile("func", $date . "    " . $position);
+//        self::addlogtoFile("func", $date . "    " . $position);
         $localDateString = DateUtils::getDateArray($date);
 
         $parser->getOutput()->updateCacheExpiry(30);
@@ -142,7 +142,7 @@ final class MoegirlRanking
         if ($position < 1) {
             return null;
         }
-        self::addlogtoFile("func", $date . "    " . $position);
+//        self::addlogtoFile("func", $date . "    " . $position);
         $localDateString = DateUtils::getDateArray($date);
 
         $parser->getOutput()->updateCacheExpiry(30);

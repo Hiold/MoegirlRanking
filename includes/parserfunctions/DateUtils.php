@@ -16,7 +16,7 @@ class DateUtils
     public static function getDateArray($dt)
     {
         $currentTime = (string)microtime();
-        $timestamp1 = (int)(substr($currentTime, 11, 20) - (3600 * 24 * $dt));
+        $timestamp1 = (int)(substr($currentTime, 11, 20) - (3600 * 24 * ($dt - 1)));
         $timestamp2 = (int)substr($currentTime, 11, 20);
         $dateString1 = date('Ymd', $timestamp1) . '000000';
         $dateString2 = date('Ymd', $timestamp2) . '235959';
